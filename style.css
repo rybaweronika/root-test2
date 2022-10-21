@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto Mono', monospace;
 }
 .header{
     min-height: 100vh;
@@ -11,6 +11,7 @@
     background-size: cover;
     position: relative;
 }
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -83,7 +84,7 @@ nav h1{
     margin: 10px 0 40px;
     font-size: 22px;
 }
-.hero-btn{
+.hero-button{
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -95,7 +96,7 @@ nav h1{
     cursor: pointer;
 }
 
-.hero-btn:hover{
+.hero-button:hover{
     color: #2F424D;
     font-size: 14px;
     border: 1px solid #fff;
@@ -165,14 +166,10 @@ nav h1{
     .row{
     flex-direction: column;
     }
+    
     .bottom{
     flex-direction: column;
     }   
-    .cta h4{
-    
-    margin: 20px;
-    padding-bottom: 300px;
-    }
 }
 
 
@@ -195,7 +192,7 @@ nav h1{
     padding: 10px;
 }
 .row {
-    color: #25333b;
+    color: #fff;
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
@@ -203,26 +200,42 @@ nav h1{
 }
 .service-row{
     flex-basis: 25%;
-    background: #f0c7ad;
+   
     border-radius: 25px;
     margin-bottom: 5%;
     padding: 40px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
-.service-row h2{
+.first{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/first\ home.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.self{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/self.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.remor{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/remortgage.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.service-row h3{
     text-align: center;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 10px 0;
 }
 .service-row p{
+    color: #fff;
     padding: 30px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .service-row:hover{
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 10px rgba(14, 29, 41, 0.363);
 }
 
 
@@ -233,7 +246,7 @@ nav h1{
     padding-top: 100px;
 }
 .team h2{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
     color: #25333b;
 }
@@ -249,7 +262,7 @@ nav h1{
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    padding: 10px;
+    padding-top: 50px;
 }
 .team-col{
     flex-basis: 40%;
@@ -328,9 +341,9 @@ nav h1{
     text-align: center;
     padding: 100px 0;
 }
-.cta h4{
+.cta .test{
     color: #25333b;
-    font-size: 30px;
+    font-size: 25px;
     
     margin-bottom: 40px;
     padding: 0;
@@ -339,8 +352,8 @@ nav h1{
     text-decoration: none;
     background: transparent;
     font-size: 30px;
-    color: #f18034;
-    border: 2px solid #f18034;
+    color: #fff;
+    border: 2px solid #fff;
     padding: 12px 34px;
     margin-top: 40px;
 }
@@ -390,4 +403,86 @@ footer .bottom{
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+}
+
+
+/*                     CONTACT.HTML     */
+.header-contact{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.header-contact h2{
+    margin-top: 100px;
+    font-size: 60px;
+}
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    padding-top: 40px;
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #25333b;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+    color: #25333b;
+}
+.contact-col div h5{
+    padding-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2F424D;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #25333b;
+    box-sizing: border-box;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #2F424D;
+    border: 1px solid #25333b;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #2F424D;
+    background: #25333bbe;
+    color: #fff;
+    transition: 1s;
 }
