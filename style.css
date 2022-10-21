@@ -443,6 +443,9 @@ footer .bottom{
     align-items: center;
     margin-bottom: 40px;
 }
+.contact-col label{
+    color: #25333b;
+}
 .contact-col div .fa{
     font-size: 28px;
     color: #25333b;
