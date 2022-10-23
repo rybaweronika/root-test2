@@ -6,7 +6,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/background.png);
+    background-image: linear-gradient(rgba(245, 240, 240, 0.055), rgba(245, 240, 240, 0.055)), url(images/background.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -104,74 +104,6 @@ nav h1{
     transition: 1s; 
 }
 
-@media(max-width: 700px){
-    .text-box h2{
-        font-size: 24px;
-    }
-    .text-box p{
-        font-size: 12px;
-        padding: 30px;
-    }
-    nav h1{
-        color: #fff;
-        font-size: 16px;
-    }
-    .hamburger{
-        display: block;
-        z-index: 2;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu ul li {
-        display: block;
-        padding: 20px;
-    }
-    .nav-menu {
-        position:  fixed;
-        left: -100%;
-        top: 0;
-        gap: 0;
-        flex-direction: column;
-        background-color: #2F424D;
-        width: 100%;
-        text-align: center;
-        transition:  0.3s;
-        z-index: 2;
-    } 
-    .nav-item{
-        margin: 16px 0;
-    }
-    .nav-menu ul li::after{
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #fff;
-        display: block;
-        margin: auto;
-        transition: 1s;
-    }
-   
-    .nav-menu.active{
-        left: 0;
-    }
-    .row{
-    flex-direction: column;
-    }
-    
-    .bottom{
-    flex-direction: column;
-    }   
-}
-
 
 .service{
     width: 80%;
@@ -207,12 +139,12 @@ nav h1{
     box-sizing: border-box;
     transition: 0.5s;
 }
-.first{
-    background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/first\ home.jpg);
+.first, .self, .remor{
+    background-color: #25333bce;
     background-position: center;
     background-size: cover;
 }
-.self{
+/* .self{
     background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/self.jpg);
     background-position: center;
     background-size: cover;
@@ -221,7 +153,7 @@ nav h1{
     background-image: linear-gradient(rgba(4, 9, 30, 0.678), rgba(4, 9, 30, 0.438)),url(images/remortgage.jpg);
     background-position: center;
     background-size: cover;
-}
+} */
 .service-row h3{
     text-align: center;
     font-size: 24px;
@@ -286,20 +218,23 @@ nav h1{
 .reviews h2{
     color: #25333b;
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 50px;
     margin: 10px 0;
 }
+.reviews h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
 .reviews p{
-    color: #25333b;
+    color: #fff;
     font-size: 16px;
-    font-weight: 600;
     line-height: 22px;
     padding: 10px;
 }
  .reviews-col{
     flex-basis: 31%;
-    background: #f0c7ad;
+    background-color: #344769;
     border-radius: 25px;
     margin: 20px;
 
@@ -311,11 +246,13 @@ nav h1{
 .hero-btn2{
     display: inline-block;
     text-decoration: none;
-    color: #25333b;
-    border: 1px solid #25333b;
+    color: #344769;
+    border: 3px solid #344769;
+    
     padding: 12px 34px;
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 20px;
+    font-weight: 500;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -323,9 +260,9 @@ nav h1{
 
 .hero-btn2:hover{
     color: #fff;
-    font-size: 14px;
-    border: 1px solid #25333b;
-    background: #25333b;
+    font-size: 20px;
+    border: 1px solid #344769;
+    background: #344769;
     transition: 1s; 
 }
 /*      CALL THE ACTION    */
@@ -333,21 +270,22 @@ nav h1{
 .cta{
     margin: 100px auto;
     width: 80%;
-    max-height:300px;
+   
     background-image: linear-gradient(rgba(245, 240, 240, 0.473), rgba(248, 244, 244, 0.507)),url(images/footer.png);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+   
 }
-.cta .test{
+.cta h1{
     color: #25333b;
-    font-size: 25px;
-    
     margin-bottom: 40px;
+    font-size: 50px;
     padding: 0;
 }
+
 .hero-btn3{
     text-decoration: none;
     background: transparent;
@@ -358,28 +296,33 @@ nav h1{
     margin-top: 40px;
 }
 .hero-btn3:hover{
-    color: #25333b;
+    color: #fff;
     font-size: 30px;
-    border: 1px solid #f18034;
-    background: #f18034;
+    border: 1px solid #25333b;
+    background: #25333b;
     transition: 1s; 
 }
+
+
+
+/*  ---------------------- FOOTER -----------*/
 footer{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding: 10px 10px;
+    background-color: #31333575;
     
 }
 footer .bottom{
     color: #25333b;
     font-weight: 600;
     flex-basis: 20% 60% 20%;
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 10px;
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    
 }
 .col-1{
     font-size: 14px;
@@ -488,4 +431,82 @@ footer .bottom{
     background: #25333bbe;
     color: #fff;
     transition: 1s;
+}
+/*---------------------MEDIA Q--------------*/
+@media(max-width: 700px){
+    .text-box h2{
+        font-size: 24px;
+    }
+    .text-box p{
+        font-size: 12px;
+        padding: 30px;
+    }
+    nav h1{
+        /*color: #fff;
+        font-size: 16px;*/
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        z-index: 2;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu ul li {
+        display: block;
+        padding: 20px;
+    }
+    .nav-menu {
+        position:  fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #344769;
+        width: 100%;
+        text-align: center;
+        transition:  0.3s;
+        z-index: 2;
+    } 
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin: auto;
+        transition: 1s;
+    }
+   
+    .nav-menu.active{
+        left: 0;
+    }
+    .row{
+    flex-direction: column;
+    }
+    .reviews h2{
+        font-size: 40px;
+       
+    }
+    .cta h1{
+        font-size: 24px;
+        margin: 20px;
+        padding-bottom: 30px;
+    
+    }
+    .bottom{
+    flex-direction: column;
+    }   
 }
