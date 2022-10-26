@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Familjen Grotesk', sans-serif;
 }
 .header{
     min-height: 100vh;
@@ -26,6 +26,7 @@ nav img {
 nav h1{
     color: #fff;
     font-size: 24px;
+    font-weight: 500;
 }
 .nav-menu{
     flex: 1;
@@ -40,7 +41,7 @@ nav h1{
 .nav-menu ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 .nav-menu ul li::after{
     content: '';
@@ -78,11 +79,12 @@ nav h1{
     text-align: center;
 }
 .text-box h2{
-    font-size: 63px;
+    font-size: 60px;
+    font-weight: 500;
 }
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 22px;
+    font-size: 26px;
 }
 .hero-button{
     display: inline-block;
@@ -90,7 +92,7 @@ nav h1{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -98,7 +100,7 @@ nav h1{
 
 .hero-button:hover{
     color: #2F424D;
-    font-size: 14px;
+    font-size: 20px;
     border: 1px solid #fff;
     background: #fff;
     transition: 1s; 
@@ -109,19 +111,20 @@ nav h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .service h2{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 600;
     color: #25333b;
 }
 .service p {
     color: #25333b;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 22px;
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .row {
     color: #fff;
@@ -156,14 +159,14 @@ nav h1{
 } */
 .service-row h3{
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     margin: 10px 0;
 }
 .service-row p{
     color: #fff;
     padding: 30px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
 }
 .service-row:hover{
@@ -175,7 +178,7 @@ nav h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .team h2{
     font-size: 60px;
@@ -183,7 +186,7 @@ nav h1{
     color: #25333b;
 }
 .team h3{
-    font-size: 20px;
+    font-size: 30px;
     color: #25333b;
     font-weight: 600;
     margin-bottom: 0;
@@ -191,10 +194,10 @@ nav h1{
 }
 .team p{
     color: #25333b;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 22px;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 .team-col{
     flex-basis: 40%;
@@ -212,14 +215,15 @@ nav h1{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     
 }
 .reviews h2{
     color: #25333b;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     margin: 10px 0;
+    padding-bottom: 50px;
 }
 .reviews h3{
     color: #fff;
@@ -250,7 +254,7 @@ nav h1{
     border: 3px solid #344769;
     
     padding: 12px 34px;
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 20px;
     font-weight: 500;
     background: transparent;
@@ -268,7 +272,7 @@ nav h1{
 /*      CALL THE ACTION    */
 
 .cta{
-    margin: 100px auto;
+    margin: 70px auto;
     width: 80%;
    
     background-image: linear-gradient(rgba(245, 240, 240, 0.473), rgba(248, 244, 244, 0.507)),url(images/footer.png);
@@ -435,16 +439,17 @@ footer .bottom{
 /*---------------------MEDIA Q--------------*/
 @media(max-width: 700px){
     .text-box h2{
-        font-size: 24px;
+        font-size: 30px;
     }
     .text-box p{
-        font-size: 12px;
+        font-size: 20px;
         padding: 30px;
     }
     nav h1{
         /*color: #fff;
-        font-size: 16px;*/
+        font-size: 20px;*/
         display: none;
+       
     }
     .hamburger{
         display: block;
@@ -494,14 +499,58 @@ footer .bottom{
         left: 0;
     }
     .row{
-    flex-direction: column;
+        flex-direction: column;
+        }
+    .service h2{
+            font-size: 50px;
+            font-weight: 600;
+    
+        }
+    .service p {
+        line-height: 1;
+        font-size: 30px;
+        font-weight: 500;
     }
-    .reviews h2{
+    .service-row h3{
+        
         font-size: 40px;
+        font-weight: 400;
        
     }
+    .team h2{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .team h3{
+        font-size: 30px;
+        color: #25333b;
+        font-weight: 500;
+        margin-bottom: 0;
+        
+    }
+    .team p{
+        
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1;
+    }
+    .hero-button{
+        font-size: 18px;
+    }
+    .hero-button:hover{
+        font-size: 20px;
+    }
+ 
+    .reviews h2{
+        font-size: 50px;
+       
+    }
+    .reviews p{
+        font-size: 18px;
+        font-weight: 200;
+    }
     .cta h1{
-        font-size: 24px;
+        font-size: 30px;
         margin: 20px;
         padding-bottom: 30px;
     
