@@ -511,12 +511,14 @@ footer .bottom{
 }
 .protection-row:hover{
     transform: scale(1.2);
+    
 }
 .protection-row img{
     width: 400px;
-    filter: brightness(2) invert(1);
-    opacity: 0.2;
     
+    filter: brightness(-1) invert(1);
+    opacity: 0.2;
+    padding-left: 50px;
 }
 .protection-row h2{
     font-size: 40px;
@@ -582,6 +584,131 @@ footer .bottom{
 .header-testimonial h2{
     margin-top: 100px;
     font-size: 60px;
+}
+/*------------------NEWS---------------*/
+.header-news {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/news.jpg);
+   
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.container{
+    max-width: 80%;
+    padding: 10px;
+    margin-left: 40px;
+    align-items: center;
+    color: #25333b;
+    
+}
+
+.header-news h2{
+     margin-top: 100px;
+     font-size: 60px;
+}
+.heading-1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.heading-2 {
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.heading-3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: crimson;
+    margin-bottom: 10px;
+}
+
+.sub-heading-news {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.sub-heading-news p {
+    font-weight: 700px;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.sub-heading-news span{
+    color: #555;
+    font-weight: 300;
+    border-right: 1px soild #ccc;
+    padding-right: 10px;
+}
+.sub-heading-news .important {
+    color: crimson;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.home{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.home-img{
+    width: 100%;
+}
+.list{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.list img{
+    width: 100%;
+    height: 80px;
+}
+/*-------------------Article--------------------*/
+article > p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    columns: 3 25ch;
+    column-gap: 40px;
+    hyphens: auto;
+}
+article p:first-child::first-line {
+    font-weight: 700;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+blockquote {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+blockquote::before {
+    content: open-quote;
+    position: absolute;
+    top: -48px;
+    left: -4px;
+    opacity: 0.3;
+    color: #666;
+    font-size: 150px;
+}
+.cards {
+    
+    columns: 25ch 3;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px 20px;
+    break-inside: avoid;
 }
 /*---------------------MEDIA Q--------------*/
 @media(max-width: 700px){
@@ -694,21 +821,46 @@ footer .bottom{
         font-size: 20px;
     }
  
-    .reviews h2{
+    .reviews h2 {
         font-size: 50px;
        
     }
-    .reviews p{
+    .reviews p {
         font-size: 18px;
         font-weight: 200;
     }
-    .cta h1{
+    .cta h1 {
         font-size: 30px;
         margin: 20px;
         padding-bottom: 30px;
     
     }
-    .bottom{
+   
+
+    .bottom {
     flex-direction: column;
     }   
+}
+@media (max-width: 950px) {
+    .home {
+        grid-template-columns:  1fr;
+    }
+    .lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+    .list {
+        grid-template-columns: 1fr 5fr;
+    }
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .lists {
+        grid-template-columns: 1fr;
+    }
 }
